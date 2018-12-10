@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tutorial Webpage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="tutorial.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300%7CMontserrat:300,500" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/d16ae9f79c.js"></script>
+	<!-- Custom Styles -->
+    <link rel="stylesheet" link href="styles.css" type="text/css" media="all">
+    <!-- Animation -->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="animated bounce">
+    <div class="brand">
+        <h1><center>JavaScript Fundamentals</center></h1>
+    </div>
+    </header>
+	<!-- Navigation -->
+	<nav>
+		<div id="container">
+			<ul>
+				<li><a href="tutorial.html">Home</a></li>
+				<li><a href="#functions">Functions</a></li>
+				<li><a href="#objects">Objects</a></li>
+				<li><a href="#arrays">Arrays</a></li>
+			</ul>
+		</div>
+    </nav>
+    
+    <sidebar id="sidebarWrapper" >
+        <div id="sidebarLinks">
+            <h2>JavaScript Resources</h2>
+            <ul class="sidebarList">
+                <li><a target="_blank" href="https://www.w3schools.com/js/default.asp" class="sidebarLink">W3 Schools</a></li>
+                <li><a target="_blank" href="https://stackoverflow.com/" class="sidebarLink">Stack Overflow</a></li>
+                <li><a target="_blank" href="https://www.codementor.io/javascript-experts" class="sidebarLink">Codementor</a></li>
+            </ul>
+
+            <br>
+
+            <h2>Libraries</h2>
+            <ul class="sidebarList">
+                <li><a target="_blank" href="https://fontawesome.com/" class="sidebarLink">Font Awesome</a></li>
+                <li><a target="_blank" href="https://daneden.github.io/animate.css/" class="sidebarLink">Animate</a></li>
+                <li><a target="_blank" href="https://framer.com/" class="sidebarLink">Framer</a></li>
+            </ul>
+
+            <br>
+            
+            <h2>Classes</h2>
+            <ul class="sidebarList">
+                <li><a class="sidebarLink" target="_blank" href="https://www.javascript.com/">Pluralsight</a></li>
+                <li><a class="sidebarLink" target="_blank" href="https://www.codecademy.com/">Code Academy</a></li>
+                <li><a class="sidebarLink" target="_blank" href="https://adapt.incl.us/">Inclusion</a></li>
+            </ul>
+        </div>
+    </sidebar>
+
+	<article class="intro">
+        <h2><em><strong><span class="highlight">JavaScript Fundamentals</span></strong></em> is made to help beginners get basic knowledge for JavaScript. 
+            JavaScript is an important part in web devleopent and any front-end developer should learn how to use JavaScript.
+            Below are some topics you need to know about JavaScript, as they are used in almost every JavaScript problem.
+        </h2>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <a id="functions"></a>
+        <h2><em>FUNCTIONS</em></h2>
+        <section>
+            <div class="codeBlock">
+                <pre><code>function random() {
+                    for (word in array)
+                    console.log(array[word])
+                    }
+                    random()</code></pre>
+
+        </section>
+        <p><ul>
+            <li>A function is a subprogram designed to perform a particular task.</li>
+            <li>Functions are executed when they are called. This is known as invoking a function.</li>
+            <li>Values can be passed into functions and used within the function.</li>
+            <li>Functions always return a value. If no return value is specified, the function will return undefined.</li>
+            <li>Functions are objects.</li>
+        </ul></p>
+
+        <br>
+        <br>
+        
+        <a id="objects"></a>
+        <h2><em>OBJECTS</em></h2>
+        <section>
+         <div class="codeBlock">
+                <pre><code>let garden = {
+                    vegetable: 'zucchini',
+                    flower: 'sun flower',
+                    fruit: 'grape',
+                    water: true,
+                    sun: true,
+                    size: 10
+                    }
+                    console.log(garden.vegetable)</code></pre>
+            </div>  
+        </section>
+        <p><ul>
+            <li>An object is a container that can hold multiple datatypes.</li>
+            <li>It has keys and values (color (key): 'blue' (value)), seperated with a colon.</li>
+            <li>Each key is seperated with a comma.</li>
+            <li>It will create and return an empty object, otherwise, it will return an object of a Type that <br> corresponds to the given value. </li>
+            <li>If the value is an object already, it will return the value.</li>
+            <li>When called in a non-constructor context, Object behaves identically to new Object().</li>
+        </ul></p>
+
+        <br>
+        <br>
+
+        <a id="arrays"></a>
+        <h2><em>ARRAYS</em></h2>
+        <section>
+            <div class="codeBlock">
+            <pre><code> let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+                    console.log(days)
+                    console.log(days.toString())
+                    console.log(days.length)</code></pre>
+            </div>
+        </section>
+        <p><ul>
+                <li>In JavaScript, array is a single variable that is used to store different elements.</li>
+                <li>It is often used when we want to store list of elements and access them by a single variable.</li> 
+                <li>Unlike most languages where array is a reference to the multiple variable, in JavaScript array is a <br> single variable that stores multiple elements.</li>
+        </ul></p>
+
+		</div>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+            <p>Made by Mitchell Wampler</p>
+            <p>@ Eleven Fifty Academy</p>
+		</div>
+	</footer>
+
+	<div id="rwd"></div>
+
+</body>
+
+</html>
