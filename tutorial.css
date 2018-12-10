@@ -61,6 +61,15 @@ a:active, a:hover {
 .header {
     color: black;
 }
+#brand {
+  font-size: 420%;
+  margin: 0;
+  position: relative;
+  left: 20px;
+  top: 50px;
+  font-weight: 100;
+  max-width: 40%;;
+}
 
 /* Sidebar */
 #sidebarWrapper {
