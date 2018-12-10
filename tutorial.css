@@ -1,0 +1,223 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Photos from:
+https://unsplash.com/search/photos/coffee */
+
+/* General */
+body {
+  background-color: lightgray;
+  color: black;
+}
+
+.container {
+  max-width: 1050px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, td, li, small, figcaption, address {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+
+/* Links */
+a:link, a:visited {
+    color: #134611;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: lime;
+}
+
+/* Header */
+.header {
+    color: black;
+}
+
+/* Sidebar */
+#sidebarWrapper {
+    float: right;
+    margin-right: 20em;
+    width: 1em;
+    height: 30em;
+    text-align: center;
+}
+
+#sidebarWrapper h3 {
+    font-weight: 100;
+    font-size: 220%;
+    position: relative;
+    top: 8vh;
+}
+
+#sidebarLinks {
+    height: 36em;
+    width: 17em;
+    background-color: white;
+    position: relative;
+    top: 290px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+a.sidebarLink {
+    color: darkgreen;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a.sidebarLink:hover {
+    color: lime;
+}
+
+.sidebarList {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+/* Navigation */
+nav .container {
+  padding: 1.0em 0.5em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.intro {
+  background-image: radial-gradient(#3e8914 0%, #82b7c0 95%);
+  color: black;
+  padding: 20px;
+  margin: 10px;
+}
+
+.intro section {
+  background-color: white;
+  color: DarkGreen;
+  padding: 10px 15px;
+  margin: 20px 10px 20px;
+  width: 800px;
+}
+.highlight {
+    color: blue;
+}
+
+.codeBlock {
+    color: black;
+    min-height: 15vh;
+    max-height: 50vh;
+    width: 100em;
+    font-size: 140%;
+    margin: auto auto auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to bottom, green, rgba(0, 0, 0, 0.7));
+  padding: 15px;
+  margin: 10px;
+  color: black;
+}
+
+
+/* RWD Test */
+#rwd {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 20px;
+  background-color: red;
+}
+
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #rwd { background-color: orange; }
+  header { background-position: center center; }
+  .branding { width: 75%; }
+  form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+  form .input {
+      flex: 1;
+      height: inherit;
+      margin: 0 15px;
+  }
+  form .label { line-height: 3.0em; }
+  form .button { display: inline-block; margin: 0; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #rwd { background-color: lime; }
+  .logo img { width: 225px; }
+  nav ul { max-width: 600px; margin: 0 auto; }
+  .branding h1 { font-size: 36px; }
+  .gallery h2, .video h2 { font-size: 36px; }
+  .gallery p, .video p {
+      font-size: 24px;
+      padding-left: 4.0em;
+      padding-right: 4.0em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #rwd { background-color: blue; }
+  header .container { padding: 5.0em 0.5em; }
+  .branding h1 { font-size: 42px; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #rwd { background-color: green; }
+  .branding h1 { font-size: 48px; }
+}
